@@ -37,6 +37,7 @@ nav {
   display: inline-flex;
   align-content: space-between;
   list-style: none;
+  margin-top: 50px;
 }
 
 nav .logo {
@@ -58,6 +59,7 @@ nav .logo {
   justify-content: center;
   align-items: center;
   align-content: space-between;
+  margin: top 15vh;
 }
 
 .item {
@@ -70,7 +72,7 @@ nav .logo {
   width: 300px;
   max-width: 300px;
   max-height: 300px;
-  margin-left: 75px;
+  margin-left: 105px;
   margin-bottom: 25px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
