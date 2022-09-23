@@ -27,10 +27,13 @@ nav {
   justify-content: center;
   align-items: center;
   align-content: space-between;
+  height: 100px;
+  margin-left: 55px;
 }
 
 .nav-list li {
-  margin-left: 32px;
+  margin-left: 250px;
+  height: 55px;
 }
 
 .nav-list {
@@ -59,6 +62,7 @@ nav .logo {
   justify-content: center;
   align-items: center;
   align-content: space-between;
+  padding: 5%;
 }
 
 .item {
