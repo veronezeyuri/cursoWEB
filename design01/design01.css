@@ -37,6 +37,7 @@ nav {
   display: inline-flex;
   align-content: space-between;
   list-style: none;
+  margin-left: 200px;
 }
 
 nav .logo {
