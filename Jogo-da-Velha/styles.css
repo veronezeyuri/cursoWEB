@@ -13,7 +13,7 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
   background-size: 300% 100%;
-  animation: gradient-animado 16s linear infinite;
+  animation: gradient-animado 10s linear infinite;
   animation-direction: alternate;
 }
 
