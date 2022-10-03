@@ -26,10 +26,10 @@ body {
   grid-template-columns: repeat(3, auto);
 }
 
-.board.x .cell:not(.x) :not(.circle):hover::after,
-.board.x .cell:not(.x) :not(.circle):hover::before,
-.board.circle .cell:not(.x) :not(.circle):hover::after,
-.board.circle .cell:not(.x) :not(.circle):hover ::before {
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after,
+.board.x .cell:not(.x):not(.circle):hover::before {
   background: rgba(255, 255, 255, 0.3) !important;
 }
 
