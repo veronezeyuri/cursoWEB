@@ -28,13 +28,16 @@
             </div>
             <ul class="redes-sociais">
                 <li>
-                    <a href="#"><img class="social-logo" src="" alt=""/></a>
+                    <a href="#"><img class="social-logo" src="images/icons8-twitter.svg" alt=""/></a>
                 </li>
                 <li>
-                    <a href="#"><img class="social-logo" src="" alt=""/></a>
+                    <a href="#"><img class="social-logo" src="images/icons8-linkedin-circundado.svg" alt=""/></a>
                 </li>
                 <li>
-                    <a href="#"><img class="social-logo" src="" alt=""/></a>
+                    <a href="https://www.instagram.com/veronezeyuri"><img class="social-logo" src="images/icons8-instagram.svg" alt=""/></a>
+                </li>
+                <li>
+                    <a href="#"><img class="social-logo" src="images/icons8-facebook-novo.svg" alt="" /></a>
                 </li>
             </ul>
         </div>
@@ -83,13 +86,6 @@
     </div>
 
     <script>
-        $("slide-principal").slick( {
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slideToShow: 1,
-        });
-
         var dots = document.querySelector(".dots");
         var quantidade = document.querySelectorAll(".slides .images");
         var atual = 0;
@@ -102,7 +98,14 @@
             div.id = i;
             dots.appendChild(div);
         }
-        document.getElementById("0").classList.add("imgAtual")
+        document.getElementById("0").classList.add("imgAtual");
+        var pos = document.querySelectorAll(".dots div");
+        for (let i = 0; i < pos.length; i++) {
+            pos[i].addEventListener("click", () => {
+                atual = pos[i];
+                slide();
+            });
+        }
         voltar.addEventListener("click", ()=> {
             atual--;
             slide();
