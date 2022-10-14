@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu responsivo</title>
+    <link rel="stylesheet" href="menu01.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><h1>Menu Responsivo</h1></div>
+      <button onclick="abrirMenu()">&#9776</button>
+      <ul id="botoesMenu">
+        <li><a href="#perfil"><p>Perfil</p></a></li>
+        <li><a href="#carrinho"><p>Carrinho</p></a></li>
+        <li><a href="#favoritos"><p>Favoritos</p></a></li>
+        <li><a href="#comprados"><p>Comprados</p></a></li>
+        <li><a href="#sair"><p>Sair</p></a></li>
+      </ul>
+    </nav>
+    <div class="content" id="perfil" style="background-color: grey">
+      <div class="height-nav"></div>
+      Perfil
+    </div>
+    <div class="content" id="carrinho" style="background-color: red">
+      <div class="height-nav"></div>
+      Carrinho
+    </div>
+    <div class="content" id="favoritos" style="background-color: yellow">
+      <div class="height-nav"></div>
+      Favoritos
+    </div>
+    <div class="content" id="comprados" style="background-color: green">
+      <div class="height-nav"></div>
+      Comprados
+    </div>
+    <div class="content" id="sair" style="background-color: purple">
+      <div class="height-nav"></div>
+      Sair
+    </div>
+    <script>
+      const arrayHeight = document.getElementsByClassName("height-nav");
+      const navHeight = document.getElementsByTagName("nav")[0].clientHeight;
+      for (let navHeightObj of arrayHeight) {
+        navHeight.style.height = navHeight + "px";
+      }
+      function abrirMenu() {
+        const botoesMenu = document.getElementById("botoesMenu");
+        botoesMenu.className = botoesMenu.className.includes("responsivo")
+          ? ""
+          : "responsivo";
+      }
+    </script>
+  </body>
+</html>
