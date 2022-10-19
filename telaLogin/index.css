@@ -1,0 +1,93 @@
+:root {
+  --clr-pink: #ef476f;
+  --clr-green: #06d6a0;
+  --clr-green_hover: #0cc493;
+  --clr-green_active: #0daf84;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login > h1 {
+  color: var(--clr-green);
+}
+
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: block;
+  padding: 30px 35px;
+  background: #2f2841;
+  border-radius: 20px;
+  box-sizing: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+  color: #00ff88;
+  font-weight: 800;
+  margin: 0;
+}
+
+.textfield {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.textfield > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #514869;
+  color: white;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.btn-login {
+  display: inline-flex;
+  padding: 1rem;
+  background-color: var(--clr-pink);
+  color: #ffffff;
+  justify-content: center;
+  border-radius: 4px;
+}
