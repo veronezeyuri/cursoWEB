@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="menu-container">
+      <div class="button">
+        Menu
+        <span class="fas fa-bars"></span>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".button").click(function () {
+          if ($(this).hasClass("expand")) {
+            $("ul").slideUp(function () {
+              $(".button").removeClass("expand");
+              $(".fas").removeClass("expand");
+            });
+          } else {
+            $(this).addClass("expand");
+            setTimeout(function () {
+              $(".fas").addClass("expand");
+              $("ul").stop().slideDown();
+            }, 200);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
