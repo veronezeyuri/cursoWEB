@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: blue;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  font-size: 30px;
+
+  height: 400px;
+  width: 400px;
+  position: relative;
+  top: 25%;
+  left: 40%;
+}
+.calendar-head {
+  padding: 5px 0;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-bottom: none;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px 25px 0% 0%;
+  backdrop-filter: blur(10px);
+  flex-direction: column;
+  position: flex;
+  width: 100%;
+  height: 45px;
+  background-color: green;
+}
+.calendar-body {
+  display: flex;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top: none;
+  box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0px 0px 80px 80px;
+  backdrop-filter: blur(10px);
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2) 100%,
+    rgba(255, 255, 255, 0.4) 0%
+  );
+}
+
+.day-number {
+  font-size: 1.7em;
+}
+
+.day {
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.circle {
+  border-radius: 50%;
+  color: yellow;
+}
