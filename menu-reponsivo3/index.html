@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Hamburguer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">ADVENTURE</a>
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Aventuras</a></li>
+          <li><a href="#">Suporte</a></li>
+          <li><a href="#">Informações</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+      <ion-icon name="menu" class="menu-hamburguer"></ion-icon>
+    </nav>
+    <header></header>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+  <script>
+    const menuhamburguer = document.querySelector(".menu-hamburguer");
+    const navLinks = document.querySelector(".nav-links");
+    menuhamburguer.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>
