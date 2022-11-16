@@ -684,3 +684,24 @@ footer a {
   color: #c9cbce;
   z-index: -9;
 }
+
+/* About Page */
+
+#page-header .about-header {
+  background-image: url(img/about/banner.png);
+}
+
+#about-head {
+  display: flex;
+  align-content: center;
+}
+
+#about-head img {
+  width: 50%;
+  min-width: 500px;
+  height: auto;
+}
+
+#about-head div {
+  padding-left: 40px;
+}
