@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeScone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container intro">
+      <div class="grid-5">
+        <img class="logo" src="img/lescone.svg" alt="le scone" />
+        <div class="intro-info">
+          <p>
+            De Seg. à Sab.<span class="aberto"></span><br />das 7:00h às 18:00h
+          </p>
+          <p>Praia do BotaFogo, 300<br />Rio de Janeiro - RJ</p>
+        </div>
+        <p class="intro-Telefone">+55 021 2412-3333</p>
+      </div>
+      <div class="grid-7">
+        <img class="intro-foto" src="img/foto.jpg" alt="foto de le scone" />
+      </div>
+    </main>
+
+    <section class="container menu">
+      <h1 class="grid-4 titulo">Menu</h1>
+      <div class="grid-7 offset-1">
+        <div class="menu-item">
+          <img src="img/prato-1.jpg" alt="foto prato 1" />
+          <h2 class="subtitulo">Entradas</h2>
+          <ul>
+            <li><span>R$1,70</span>Ovos mexidos</li>
+            <li><span>R$2,70</span>Scones de Frutas</li>
+            <li><span>R$3,70</span>Joelho de Queijo</li>
+            <li><span>R$4,70</span>Presunto cozido</li>
+            <li><span>R$3,70</span>Coxinha de Frango</li>
+          </ul>
+        </div>
+
+        <div class="menu-item">
+          <img src="img/prato-2.jpg" alt="foto prato 2" />
+          <h2 class="subtitulo">Pratos Principais</h2>
+          <ul>
+            <li><span>R$10,70</span>Panne com Queijo</li>
+            <li><span>R$22,70</span>Feijoada</li>
+            <li><span>R$33,70</span>Costela ao Molho</li>
+            <li><span>R$14,70</span>Medalhão de Frango</li>
+            <li><span>R$13,70</span>Coxinha de Frango</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="container contato">
+        <h1 class="grid-4 titulo">Contato</h1>
+        <div class="grid-7 offset-1">
+          <form>
+            <label>Nome</label>
+            <input type="text" class="input" />
+            <div class="row">
+              <div class="grid-7">
+                <label>E-mail</label>
+                <input type="text" class="input" />
+              </div>
+              <div class="grid-5">
+                <label>Telefone</label>
+                <input type="text" class="input" />
+              </div>
+            </div>
+            <label>Mensagem</label>
+            <textarea class="input"></textarea>
+            <input type="text" class="form" value="Enviar" />
+          </form>
+          <div class="contato-info">
+            <p>contato@lescode.com////</p>
+            <p>+55 021 2412-3333</p>
+          </div>
+          <a href="#" class="contato-mapa">
+            <img src="img/map.png" alt="Como chegar em Le scone" />
+          </a>
+        </div>
+      </section>
+    </footer>
+
+    <style>
+      .modal-container {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2000;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-container.mostrar {
+        display: flex;
+      }
+
+      .modal {
+        background: white;
+        width: 60%;
+        min-width: 300px;
+        padding: 40px;
+        border: 10px solid #988b7a;
+        box-shadow: 0 0 0 10px white;
+        position: relative;
+      }
+
+      @keyframes modal {
+        from {
+          opacity: 0;
+          transform: translate3d(0, -60px, 0);
+        }
+
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .mostrar .modal {
+        animation: modal 0.3s;
+      }
+
+      .fechar {
+        position: absolute;
+        font-size: 1.2em;
+        top: -30px;
+        right: -30px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 4px solid white;
+        background: #988b7a;
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        cursor: pointer;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+      }
+    </style>
+
+    <div id="modal-promocao" class="modal-container">
+      <div class="modal">
+        <button class="fechar">x</button>
+        <h3 class="subtitulo">Cadastrar-se na Newletter</h3>
+        <form>
+          <input type="text" class="input" placeholder="Email" />
+          <input type="text" class="input" value="cadastrar" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
